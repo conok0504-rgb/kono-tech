@@ -1,0 +1,164 @@
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  color: #38bdf8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e293b;
+}
+
+nav h2 {
+  color: #38bdf8;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #7dd3fc;
+}
+
+.articles {
+  padding: 40px 30px;
+}
+
+.articles h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-top: 0;
+}
+
+.card p {
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+.card:hover {
+  border-color: #38bdf8;
+}
+
+footer {
+  background-color: #1e293b;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+#themeBtn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+body.light {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+body.light nav,
+body.light footer,
+body.light .card {
+  background-color: #e2e8f0;
+}
+
+body.light .hero p,
+body.light .card p,
+body.light footer p {
+  color: #475569;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  }
