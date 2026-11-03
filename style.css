@@ -41,6 +41,15 @@ nav a:hover {
   color: #38bdf8;
 }
 
+#menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
 .hero {
   padding: 80px 20px;
   text-align: center;
@@ -144,10 +153,36 @@ body.light footer p {
   color: #475569;
 }
 
+body.light #menuBtn,
+body.light nav a {
+  color: #0f172a;
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    gap: 10px;
+    align-items: stretch;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  nav ul.open {
+    display: flex;
   }
 
   .hero {
@@ -161,4 +196,4 @@ body.light footer p {
   .cards {
     grid-template-columns: 1fr;
   }
-  }
+}
