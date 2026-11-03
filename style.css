@@ -1,7 +1,7 @@
 body {
   background-color: #0f172a;
   color: white;
-  font-family: Arial, sans-serif;
+    font-family: 'Cairo', Arial, sans-serif;
   text-align: center;
   margin: 0;
 }
@@ -196,4 +196,8 @@ body.light nav a {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+button {
+  font-family: inherit;
 }
