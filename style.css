@@ -208,7 +208,45 @@ a.card {
   color: inherit;
   text-decoration: none;
 }  
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  text-align: right;
+  line-height: 2;
+}
 
+.post h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #334155;
+}
+
+.post h2 {
+  color: #38bdf8;
+  font-size: 1.4rem;
+  margin-top: 40px;
+  padding-right: 14px;
+  border-right: 4px solid #38bdf8;
+}
+
+.post p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+}
+
+.post .btn {
+  margin-top: 40px;
+}
+
+body.light .post h1 {
+  border-bottom-color: #cbd5e1;
+}
+
+body.light .post p {
+  color: #334155;
+}
 
 
 
